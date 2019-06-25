@@ -1,0 +1,247 @@
+@darkblue: #278ebc;
+@lightblue: #b6dff2;
+@import url('https://fonts.googleapis.com/css?family=Dosis:600|Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:link {
+    color: @darkblue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.masthead {
+    position: relative;
+    min-height: 75vh;
+    background-image: url('../img/HeroImage.jpg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    img {
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+    
+    .content {
+        position: absolute;
+        top: 22vw;
+        left: 5vh;
+    }
+}
+
+.navbar {
+    background: @darkblue;
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    .nav-item.nav-link a {
+        color: #fff;
+        padding: 10px 20px;
+        transition: all 200ms ease;
+        
+        &:hover {
+            text-decoration: none;
+            background: @lightblue;
+            color: #333;
+        }
+    }
+    
+    button {
+        color: #fff;
+    }
+    
+    .navbar-brand {
+        max-width: 150px;
+    }
+}
+
+.overview {
+    padding: 5em;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    .text {
+        max-width: 1000px;
+        margin: 0px auto;
+    }
+}
+
+.our-services {
+    padding: 5em 10em;
+    background: @darkblue;
+    color: #fff;
+    
+    h2 {
+        font-size: 24px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .grid-item {
+        text-align: center;
+        padding: 1em;
+    }
+
+    .icon {
+        background: @lightblue;
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        margin: 20px auto;
+        color: @darkblue;
+        font-size: 60px;
+        line-height: 1.8;
+    }
+}
+
+.our-start {
+    padding: 5em;
+    
+    h2 {
+        color: @darkblue;
+        font-size: 25px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(401px, 1fr));
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+.subhead {
+    text-align: center;
+    padding: 3em;
+    h1 {
+        font-size: 50px;
+    }
+}
+
+.subpage {
+    padding: 1em;
+    margin-bottom: 50px;
+    
+    h2 {
+        margin: 30px 0px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 50px;
+    }
+}
+
+.modal-title {
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    color: @darkblue;
+}
+
+.btn-solid {
+    background: @lightblue;
+    display: block;
+    margin-bottom: 10px;
+    min-width: 300px;
+}
+
+footer {
+    background: @darkblue;
+    min-height: 50vh;
+    color: #fff;
+    padding: 3em;
+    
+    h2 {
+        font-size: 25px;
+    }
+    
+    .icons {
+        font-size: 30px;
+    }
+    
+    .details {
+        font-size: 14px;
+        text-align: right;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 997px) {
+
+    .overview,
+    .our-services,
+    .our-start {
+        padding: 3em 1em;
+    }
+
+    .overview {
+        font-size: 20px;
+    }
+
+    .our-services .grid-item {
+        padding: 1em;
+    }
+    
+    .grid {
+        grid-template-columns: auto !important;
+    }
+    
+    .masthead .content {
+        position: absolute;
+        top: 35vw;
+        left: 5vh;
+    }
+    
+    footer {
+        padding: 3em 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .masthead {
+        background-image: none;
+        background: @lightblue;
+        min-height: 50vh;
+        
+        .content {
+            top: 20vw;
+        }
+    }
+}

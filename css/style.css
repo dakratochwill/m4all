@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:link {
+    color: #278ebc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.masthead {
+    height: 75vh;
+    min-height: 500px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-brand {
+    max-width: 200px;
+}
+
+.our-services {
+    padding: 10em;
+}
+
+.our-services .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.our-services .grid-item {
+    text-align: center;
+    padding: 3em;
+}
+
+.our-services .icon {
+    background: #278ebc;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin: 20px auto;
+    color: #fff;
+    font-size: 60px;
+    line-height: 1.8;
+}
