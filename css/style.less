@@ -32,21 +32,36 @@ a:hover {
 
 .masthead {
     position: relative;
-    min-height: 75vh;
-    background-image: url('../img/HeroImage.jpg');
-    background-attachment: scroll;
-    background-size: cover;
-    background-repeat: no-repeat;
+    min-height: 80vh;
+    background-image: linear-gradient(to top, #fff1eb 0%, @lightblue 100%);
 
     img {
-        max-width: 400px;
+        max-width: 500px;
         margin-bottom: 20px;
     }
     
     .content {
         position: absolute;
-        top: 22vw;
-        left: 5vh;
+        top: 12vw;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.home .navbar {
+    background: @lightblue !important;
+    
+    .nav-item.nav-link a {
+        color: #333;
+        
+        &:hover {
+            text-decoration: none;
+            background: @darkblue;
+            color: #fff;
+        }
+    }
+    button {
+        color: #333;
     }
 }
 
@@ -79,21 +94,22 @@ a:hover {
 }
 
 .overview {
-    padding: 5em;
-    font-size: 30px;
+    padding: 3em;
+    font-size: 40px;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 
     .text {
-        max-width: 1000px;
+        max-width: 1050px;
         margin: 0px auto;
+        color: @darkblue;
     }
 }
 
 .our-services {
     padding: 5em 10em;
-    background: @darkblue;
-    color: #fff;
+    background: @lightblue;
+    color: #333;
     
     h2 {
         font-size: 24px;
@@ -111,8 +127,6 @@ a:hover {
     }
 
     .icon {
-        background: @lightblue;
-        border-radius: 50%;
         width: 110px;
         height: 110px;
         margin: 20px auto;
@@ -223,11 +237,6 @@ footer {
         grid-template-columns: auto !important;
     }
     
-    .masthead .content {
-        position: absolute;
-        top: 35vw;
-        left: 5vh;
-    }
     
     footer {
         padding: 3em 1em;
@@ -237,11 +246,20 @@ footer {
 @media screen and (max-width: 768px) {
     .masthead {
         background-image: none;
-        background: @lightblue;
-        min-height: 50vh;
+        background: #fff;
+        min-height: auto;
+        position: relative;
+        
+        img {
+        max-width: 100%;
+    }
         
         .content {
-            top: 20vw;
+            position: relative;
+            max-width: 100%;
+            top: 0;
+            left: 0;
+            padding: 35px 25px 15px;
         }
     }
 }
