@@ -43,7 +43,7 @@ hr {
         max-width: 500px;
         margin-bottom: 20px;
     }
-    
+
     .content {
         position: absolute;
         top: 12vw;
@@ -52,49 +52,128 @@ hr {
     }
 }
 
-.home .navbar {
-    background: @lightblue !important;
-    
-    .nav-item.nav-link a {
-        color: #333;
-        
-        &:hover {
-            text-decoration: none;
-            background: @darkblue;
-            color: #fff;
+// homepage navigation styles
+.home {
+
+    .navbar {
+        background: @lightblue  !important;
+
+        .navbar-nav li {
+            padding: 0px;
+            margin: 10px 0px;
+
+            a {
+                color: #555;
+                padding: 15px 25px;
+                transition: all 200ms ease;
+
+                &:hover {
+                    text-decoration: none;
+                    background: @lightblue;
+                    color: #333;
+                }
+            }
         }
-    }
-    button {
-        color: #333;
+
+        .navbar-nav li ul {
+            padding-left: 0px;
+            display: none;
+            background: none;
+            padding-top: 10px;
+            margin-left: 10px;
+
+            li {
+                margin: 0px;
+
+                a {
+                    color: #fff !important;
+                    background: @darkblue;
+                    display: block;
+
+                    &:hover {
+                        text-decoration: none;
+                        background: white;
+                        color: #333 !important;
+                    }
+                }
+            }
+        }
+
+        .navbar-nav li:hover ul,
+        .navbar-nav li:focus ul {
+            display: block;
+        }
+
+        button {
+            color: #333;
+        }
     }
 }
 
+//subpage navigation styles
 .navbar {
     background: @darkblue;
     width: 100%;
     font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    
-    .nav-item.nav-link a {
+
+    button {
         color: #fff;
-        padding: 10px 20px;
+    }
+
+    .navbar-brand {
+        max-width: 150px;
+    }
+}
+
+.navbar-nav li {
+    padding: 0px;
+    margin: 10px 0px;
+
+    a {
+        color: #fff;
+        padding: 15px 25px;
         transition: all 200ms ease;
-        
+
         &:hover {
             text-decoration: none;
             background: @lightblue;
             color: #333;
         }
     }
-    
-    button {
-        color: #fff;
+}
+
+.navbar-nav li ul {
+    padding-left: 0px;
+    position: absolute;
+    margin-left: -10px;
+    z-index: 2;
+    min-width: 200px;
+    display: none;
+    padding-top: 25px;
+
+    li {
+        margin: 0px;
+
+        a {
+            color: #fff !important;
+            background: @darkblue;
+            min-width: 150px;
+            display: block;
+
+            &:hover {
+                text-decoration: none;
+                background: @lightblue;
+                color: #333 !important;
+            }
+        }
     }
-    
-    .navbar-brand {
-        max-width: 150px;
-    }
+}
+
+.navbar-nav li:hover ul,
+.navbar-nav li:focus ul {
+    display: block;
 }
 
 .overview {
@@ -114,7 +193,7 @@ hr {
     padding: 5em 10em;
     background: @lightblue;
     color: #333;
-    
+
     h2 {
         font-size: 24px;
     }
@@ -142,7 +221,7 @@ hr {
 
 .our-start {
     padding: 5em;
-    
+
     h2 {
         color: @darkblue;
         font-size: 25px;
@@ -167,6 +246,7 @@ hr {
 .subhead {
     text-align: center;
     padding: 3em;
+
     h1 {
         font-size: 50px;
     }
@@ -175,10 +255,11 @@ hr {
 .subpage {
     padding: 1em;
     margin-bottom: 50px;
-    
+
     h2 {
         margin: 30px 0px;
     }
+
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -208,6 +289,7 @@ hr {
         text-transform: none;
         font-family: 'Montserrat', sans-serif;
     }
+
     .date {
         font-family: 'Dosis', sans-serif;
         text-transform: uppercase;
@@ -222,15 +304,15 @@ footer {
     min-height: 50vh;
     color: #fff;
     padding: 3em;
-    
+
     h2 {
         font-size: 25px;
     }
-    
+
     .icons {
         font-size: 30px;
     }
-    
+
     .details {
         font-size: 14px;
         text-align: right;
@@ -253,12 +335,12 @@ footer {
     .our-services .grid-item {
         padding: 1em;
     }
-    
+
     .grid {
         grid-template-columns: auto !important;
     }
-    
-    
+
+
     footer {
         padding: 3em 1em;
     }
@@ -270,11 +352,11 @@ footer {
         background: #fff;
         min-height: auto;
         position: relative;
-        
+
         img {
-        max-width: 100%;
-    }
-        
+            max-width: 100%;
+        }
+
         .content {
             position: relative;
             max-width: 100%;
@@ -282,5 +364,13 @@ footer {
             left: 0;
             padding: 35px 25px 15px;
         }
+    }
+
+    .navbar-nav li ul {
+        position: relative;
+        margin-left: 0px;
+        z-index: 2;
+        min-width: 0;
+        padding-top: 25px;
     }
 }
