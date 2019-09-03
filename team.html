@@ -17,116 +17,850 @@
 
 <body>
     <nav class="navbar navbar-expand-lg static-top">
-        <div class="navbar-brand"><img src="img/M4ALL%20Website%20design%20refresh_v1-2white.png"></div>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ml-auto mr-5">
-                <li class="nav-item nav-link"><a href="index.html">Home</a></li>
-                <li class="nav-item nav-link"><a href="#">Our Mission</a>
-                    <ul>
-                        <li class="nav-item nav-link"><a href="about.html">Our Story</a></li>
-                        <li class="nav-item nav-link"><a href="team.html">Our Team</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item nav-link"><a href="#">Our Portfolio</a>
-                    <ul>
-                        <li class="nav-item nav-link"><a href="#">Webinars</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item nav-link"><a href="news.html">News</a></li>
-                <li class="nav-item nav-link"><a href="#">Get Involved</a></li>
-                <li class="nav-item nav-link"><a href="#">Resources</a>
-                    <ul>
-                        <li class="nav-item nav-link"><a href="training.html">Training</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item nav-link"><a href="contact.html">Contact</a></li>
-            </ul>
+        <div class="container">
+            <div class="navbar-brand"><a href="#"><img src="img/M4ALL%20Website%20design%20refresh_v1-2white.png"></a></div>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item nav-link"><a href="#">about M4ALL</a>
+                        <ul>
+                            <li class="nav-item nav-link"><a href="about.html">Our Story</a></li>
+                            <li class="nav-item nav-link"><a href="team.html">team</a></li>
+                            <li class="nav-item nav-link"><a href="#">M4ALL affiliates</a></li>
+                            <li class="nav-item nav-link"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-link"><a href="#">Our Portfolio</a>
+                        <ul>
+                            <li class="nav-item nav-link"><a href="#">overview</a></li>
+                            <li class="nav-item nav-link"><a href="#">BMGF projects</a></li>
+                            <li class="nav-item nav-link"><a href="#">other projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-link"><a href="#">Resources</a>
+                        <ul>
+                            <li class="nav-item nav-link"><a href="training.html">Training</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-link"><a href="#">Get Involved</a>
+                        <ul>
+                            <li class="nav-item nav-link"><a href="training.html">Donors</a></li>
+                            <li class="nav-item nav-link"><a href="training.html">educational resources</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-link"><a href="news.html">News</a>
+                        <ul>
+                            <li class="nav-item nav-link"><a href="training.html">Press releases</a></li>
+                            <li class="nav-item nav-link"><a href="training.html">publication archives</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <header class="subhead">
-        <h1>Our Team</h1>
+        <div class="container">
+            <h1>Our Team</h1>
+        </div>
     </header>
     <section class="subpage container">
         <div class="grid">
-            <!-- Team Member 1 -->
-            <div class="grid-item">
-                <div class="card border-0 shadow">
-                    <img src="https://placehold.it/500x350" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mb-0"><a href="#" data-toggle="modal" data-target="#exampleModal">Eugene Choi, Ph.D.</a></h5>
-                        <div class="card-text text-black-50">Executive Director</div>
-                    </div>
-                </div>
+            <div class="sidebar order-2 order-lg-1">
+                <p class="title">About M4ALL</p>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="team.html">Our Team</a>
+                        <ul>
+                            <li>
+                                <a id="pills-home-tab" data-toggle="pill" href="#leadership" role="tab" aria-controls="pills-home" aria-selected="true">Leadership</a>
+                            </li>
+                            <li>
+                                <a id="pills-profile-tab" data-toggle="pill" href="#fac-staff" role="tab" aria-controls="pills-profile" aria-selected="false">Faculty & Research Staff</a>
+                            </li>
+                            <li>
+                                <a id="pills-contact-tab" data-toggle="pill" href="#postdocs" role="tab" aria-controls="pills-contact" aria-selected="false">Postdoctoral Research Associates</a>
+                            </li>
+                            <li>
+                                <a id="pills-contact-tab" data-toggle="pill" href="#scholars-advisers" role="tab" aria-controls="pills-contact" aria-selected="false">Adjunct & Visiting Scholars, Advisers</a>
+                            </li>
+                            <li>
+                                <a id="pills-contact-tab" data-toggle="pill" href="#students" role="tab" aria-controls="pills-contact" aria-selected="false">Students</a>
+                            </li>
+                            <li>
+                                <a id="pills-contact-tab" data-toggle="pill" href="#admin" role="tab" aria-controls="pills-contact" aria-selected="false">Administration</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">M4ALL Affiliates</a></li>
+                </ul>
             </div>
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <p class="modal-title" id="exampleModalLabel">Eugene Choi, Ph.D.</p>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+            <div class="main-content order-1 order-lg-2">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="leadership" role="tabpanel" aria-labelledby="leadership-tab">
+                        <div class="team-grid">
+                            <!-- Team Member 1 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Gupton.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#FrankGupton">B. Frank Gupton, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Chief Executive Officer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 1-->
+                            <div class="modal fade" id="FrankGupton" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">B. Frank Gupton, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            B. Frank Gupton, Ph.D., is the Floyd D. Gottwald Professor and Chair of the Department of Chemical and Life Science Engineering at the Virginia Commonwealth University School of Engineering. His thirty year industrial career has centered on the development and commercialization of chemical processes for pharmaceutical and agricultural applications. As Executive Director of Chemical Process Development at Boehringer Ingelheim Pharmaceuticals he led the development and commercialization of the chemical process for the production of Nevirapine, a widely-prescribed antiviral medication for the treatment of AIDS. Gupton holds a B.S. in chemistry from the University of Richmond, an M. S. in biochemistry from the Georgia Institute of Technology, and a Ph.D. in chemistry from VCU.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 2 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Eugene.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#EugeneChoi">Eugene Choi, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Executive Director</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 2-->
+                            <div class="modal fade" id="EugeneChoi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Eugene Choi, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Eugene Choi, Ph.D., defines and leads the strategic direction of the Medicines for All Institute, including defining organizational priorities, overseeing programs and developing strategic partnerships. Previously, Choi was the chief engineer at the Defense Advanced Research Projects Agency for the Pharmacy on Demand and Biologically-derived Medicines on Demand programs. These initiatives developed flexible pharmaceuticals and biologics manufacturing platforms capable of producing multiple drugs. Choi has also designed and managed multiple technology development projects for Strategic Analysis, Inc., enabling capabilities for the Department of Defense. He also served as a researcher in materials science and biomedical engineering at the National Academies and the National Institutes of Health. He holds a B.S. in biology from Indiana University and a Ph.D. in polymer science from the University of Akron.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 3 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/tylermcquade.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#TylerMcQuade">Tyler McQuade, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Chief Technology Officer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 3-->
+                            <div class="modal fade" id="TylerMcQuade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Tyler McQuade, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Dr. McQuade studied organic chemistry at UC Irvine, UW Madison and MIT. He added knowledge of chemical engineering during his 14 years in academics and as a program manager and member of the leadership team at DARPA. Dr. McQuade is now a professor and principal in the Medicines for All Institute, an organization he founded with Dr. Gupton in 2009.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 4 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Stringham,%20Rodger.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#RodgerStringham">Rodger Stringham, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Principal Analytical Chemist & Manufacturer Engagement Lead</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 4-->
+                            <div class="modal fade" id="RodgerStringham" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Rodger Stringham, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Dr. Stringham is responsible for the development of analytical chemistry to support process development at the Medicines for All Institute. He is also responsible for market intelligence, technology transfer and relationship-building with manufacturers and Global Health partners. Prior to joining the institute Dr. Stringham spent 11 years as the head of the process chemistry team at the Clinton Health Access Initiative. This was preceded by 18 years working as an analytical chemist in technology companies and in the pharmaceutical industry. He holds both B.S. and M.S. degrees from Virginia Tech as well as a Ph.D. from Purdue University.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 5 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/BruceThomas.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-0"><a href="#" data-toggle="modal" data-target="#BruceThomas">Bruce V. Thomas J.D.</a></h5>
+                                        <div class="card-text text-black-50">Senior Adviser</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            Eugene Choi, Ph.D., defines and leads the strategic direction of the Medicines for All Institute, including defining organizational priorities, overseeing programs and developing strategic partnerships. Previously, Choi was the chief engineer at the Defense Advanced Research Projects Agency for the Pharmacy on Demand and Biologically-derived Medicines on Demand programs. These initiatives developed flexible pharmaceuticals and biologics manufacturing platforms capable of producing multiple drugs. Choi has also designed and managed multiple technology development projects for Strategic Analysis, Inc., enabling capabilities for the Department of Defense. He also served as a researcher in materials science and biomedical engineering at the National Academies and the National Institutes of Health. He holds a B.S. in biology from Indiana University and a Ph.D. in polymer science from the University of Akron.
+                    </div>
+                    <!-- Modal 5-->
+                    <div class="modal fade" id="BruceThomas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modal-title" id="exampleModalLabel">Bruce V. Thomas J.D.</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Bruce Thomas is a recognized expert in the areas of medication adherence and access, with experience leading efforts to address these issues at scale to improve patients’ lives. As a consultant and grantee to the Bill & Melinda Gates Foundation since 2014, he leads the development, testing and scale-up of new approaches to improve differentiated care for TB and HIV patients in China, India, and Sub-Saharan Africa. In his work with VCU’s Medicines For All Institute, he works to ensure that the global health community capitalizes fully on the institute’s innovative approaches to improve access to lifesaving treatments. He previously served as president of MeadWestvaco Healthcare, establishing a proprietary manufacturing system and supply chain in India to bring generic pharmaceutical products to North America in ready-to-dispense, adherence-enhancing packaging for Walmart’s breakthrough $4 generic program.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Team Member 2 -->
-            <div class="grid-item">
-                <div class="card border-0 shadow">
-                    <img src="https://placehold.it/500x350" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Team Member</h5>
-                        <div class="card-text text-black-50">Team Member Title</div>
+                    <div class="tab-pane fade" id="fac-staff" role="tabpanel" aria-labelledby="fac-staff-tab">
+                        <div class="team-grid">
+                            <!-- Team Member 6 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/roper.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#ThomasRoper">Thomas Roper, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Director of Pharmaceutical Engineering</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 6-->
+                            <div class="modal fade" id="ThomasRoper" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Thomas Roper, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Thomas D. Roper, Ph.D., joined VCU in 2016 after a 22-year career at GlaxoSmithKline Pharmaceuticals. He held senior positions in the Pharmaceutical Development Division of GSK, including responsibilities for process R&D and analytical development for active pharmaceutical ingredients for the US, and most recently was the global head of exploratory development sciences for GSK. Roper specializes in efforts to bring engineering and science closer to patients via novel medicinal technologies. He holds a B.S. in chemistry from VCU and a Ph.D. in organic chemistry from the University of Virginia. He was a postdoctoral associate in organic chemistry at Harvard University.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 7 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Snead,%20David.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#DavidSnead">David Snead, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Director of Research</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 7-->
+                            <div class="modal fade" id="DavidSnead" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">David Snead, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            David Snead, Ph.D., is the Director of Research at Medicines for All. He uses his expertise in process development to address problems in the pharmaceutical and commodity chemical industries. He comes to VCU from Merck where he applied continuous flow technology to solve complex problems in API process development. David developed his skills in continuous synthesis as a postdoc at MIT in the early days of the Pharmacy on Demand project. Prior to joining Merck, he worked in front-end innovation to identify and develop new business opportunities for GP Chemicals resulting in executive level sponsorship for commercialization of two projects. He holds a B.S. in chemistry from UNC-CH and a Ph.D. in organic chemistry from the University of Florida.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 8 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/SaeedAhmad.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#SaeedAhmad">Saeed Ahmad, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Research Assistant Professor</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 8-->
+                            <div class="modal fade" id="SaeedAhmad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Saeed Ahmad, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Saeed Ahmad, Ph.D., specializes in the development of using small molecules, peptides and proteins. He also works in development of new and existing active pharmaceutical ingredients, as well as development of efficient and cost-effective processes using continuous synthesis and flow chemistry. Ahmad holds a Ph.D. in organic chemistry from the University of Allahabad, India. He was previously a postdoctoral fellow at the University of Georgia in Athens, Georgia.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 9 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Katerine.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#KatherineBelecki">Katherine Belecki, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Research Assistant Professor in Chemistry</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 9-->
+                            <div class="modal fade" id="KatherineBelecki" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Katherine Belecki, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Katherine Belecki, Ph.D., is a Co-Investigator with Medicines 4 All and an Assistant Professor in the Department of Chemistry at VCU. Belecki leverages her expertise in organic synthesis, natural product biosynthesis, process engineering, and biocatalysis by exploiting both “traditional” process intensification activities and also strategies and tools from Nature to advance chemical synthesis efforts. As a member of the M4All team since its inception, she served as Project Manager for the process optimization of nevirapine and has been a key player in all early M4All activities. She earned her Ph.D. from the Johns Hopkins University and previously worked as a process chemist at Pfizer, Inc.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 10 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Bim.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#BimbisarDesai">Bimbisar K. Desai, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Research Assistant Professor</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 10-->
+                            <div class="modal fade" id="BimbisarDesai" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Bimbisar K. Desai, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Bimbisar "Bobby" K. Desai, Ph.D., is a research assistant professor in VCU’s pharmaceutical engineering labs. He brings a strong background in synthetic organic and medicinal chemistry gained in academic and industry settings. His research focuses on the integration of new synthetic chemistry technologies including flow chemistry for the delivery of active pharmaceutical ingredients and molecules of medicinal value. He holds a Ph.D. in organic chemistry from the University of Surrey, England.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 11 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/vcu-blank-profile.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#KeithEllis">Keith Ellis, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Assistant Professor</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 11-->
+                            <div class="modal fade" id="KeithEllis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Keith Ellis, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Profile comming soon.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 12 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/MoJiang.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#MoJiang">Mo Jiang, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Assistant Professor</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 12-->
+                            <div class="modal fade" id="MoJiang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Mo Jiang, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Mo Jiang, Ph.D., is a Co-Investigator with Medicines for All and an Assistant Professor in the Department of Chemical and Life Science Engineering at VCU. With M4ALL, Jiang focuses on process intensification for advanced pharmaceutical manufacturing, such as designing novel processes and platforms of continuous crystallization and/or evaporation. Jiang holds a B.S. in biology from Tsinghua University, an M.S. in chemical engineering from the University of Illinois at Urbana-Champaign, and a Ph.D. in chemical engineering from the Massachusetts Institute of Technology.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 13 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Chris_Kellyv2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#ChristopherKelly">Christopher Kelly, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Assistant Professor in Chemistry</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 13-->
+                            <div class="modal fade" id="ChristopherKelly" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Christopher Kelly, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Christopher Kelly, Ph.D. is a Co-Investigator with Medicines for All and an Assistant Professor in the Department of Chemistry at VCU he received a B.S. in Biochemistry from Stonehill College and Ph.D. in organic chemistry from University of Connecticut. During his time at UConn, he developed new synthetic methods in organofluorine and oxoammonium salt chemistry and transitioned some of these methods to continuous flow processing. After earning his Ph.D. in organic chemistry in 2015, he joined Prof. Gary Molander’s group at the University of Pennsylvania (UPenn) as a National Institutes of Health postdoctoral fellow. At UPenn, he used visible light activated photocatalysts to discover new radical feedstocks and enable new C-C bond forming processes. In 2018, Dr. Kelly began his independent career at VCU as part of the Medicines for All Institute.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 14 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Sieber,%20Josh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#JoshuaSieber">Joshua Sieber, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Assistant Professor in Chemistry</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 14-->
+                            <div class="modal fade" id="JoshuaSieber" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Joshua Sieber, Ph.D</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Joshua Sieber, Ph.D., is a Co-Investigator with Medicines for All and an Assistant Professor in the Department of Chemistry at VCU. He joined VCU in 2018 after a 7-year stent in industry in the process chemistry group at Boehringer Ingelheim Pharmaceuticals, Inc. where he gained expertise in developing synthetic processes for the large-scale synthesis of new APIs and the application of catalysis to large-scale processes. He obtained a Ph.D. from Boston College in 2008 followed by an American Cancer Society postdoctoral fellow at Stanford University where he gained experience in catalysis development and the total synthesis of natural products. His research interests focus on applying his background in catalysis, total synthesis, and process chemistry to develop new catalysts and catalytic reactions that target industrial-scale applications.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 15 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Nakul.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#NakulTelang">Nakul S. Telang, Ph.D</a></h5>
+                                        <div class="card-text text-black-50">Research Assistant Professor</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 15-->
+                            <div class="modal fade" id="NakulTelang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Nakul S. Telang, Ph.D</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Nakul S. Telang, Ph.D, is an expert in medicinal chemistry and has broad experience in synthetic organic chemistry. He brings seven years of strong postdoctoral research experience with research focus on design and synthesis of novel chemical entities (NCEs) for cure of life threatening diseases. Telang also had the opportunity to collaborate on externally funded projects with renowned experts from the pharmaceutical industry. At the Medicines for All Institute, he conducts research in the development of novel chemical synthetic routes of therapeutic drugs through flow chemistry.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- Team Member 3 -->
-            <div class="grid-item">
-                <div class="card border-0 shadow">
-                    <img src="https://placehold.it/500x350" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Team Member</h5>
-                        <div class="card-text text-black-50">Team Member Title</div>
+                    <div class="tab-pane fade" id="postdocs" role="tabpanel" aria-labelledby="postdocs-tab">
+                        <div class="team-grid">
+                            <!-- Team Member 16 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Berton,%20Mateo.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#MateoBerton">Mateo Berton, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Postdoctoral Research Associate</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 16-->
+                            <div class="modal fade" id="MateoBerton" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Mateo Berton, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Originally from Brussels, Mateo Berton, Ph.D., received his bachelor’s (2010), master’s (2012) and doctoral (2016) degrees in chemistry from the University of Valencia (Spain) where he studied the reactivity of carbon dioxide and explored its synthetic applications. In his postdoctoral position at Johnson & Johnson in the department of continuous flow chemistry under the direction of Jesús Alcázar he gained expertise applying this methodology in drug discovery. In 2017, he moved to the US to work for Paul G. Williard as a postdoctoral research associate at Brown University studying solid state and solvent free aldol and hydride transfer reactions. Mateo is currently a postdoctoral research fellow in Dr. McQuade’s laboratory. His research focuses on the design of flow system for the synthesis of on-demand organometallic reagents.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 17 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Daniel.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#DanielCook">Daniel W. Cook, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Postdoctoral Research Associate</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 17-->
+                            <div class="modal fade" id="DanielCook" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Daniel W. Cook, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Daniel W. Cook, Ph.D., is a postdoctoral fellow working under Thomas D. Roper, Ph.D. In this role he serves as the primary analytical chemist for research efforts of Roper and B. Frank Gupton, Ph.D. He received his B.S. in chemistry from Randolph-Macon College in Ashland, Virginia in 2011. He received his Ph.D. in chemistry from VCU in 2016. His research interests primarily lie in the fields of separations as well as the application of advanced data analysis (chemometrics) to existing instrumental methods.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 18 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Derstine,%20Brenden.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#BrendenDerstine">Brenden Derstine, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Postdoctoral Research Associate</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 18-->
+                            <div class="modal fade" id="BrendenDerstine" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Brenden Derstine, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Brenden P. Derstine, Ph.D., received his B.S. in chemistry from the University of Hartford in 2012. He completed his Ph.D. in 2018 under the guidance of Dr. Scott McN. Sieburth at Temple University where he focused on [4 + 4] photocycloadditions and titanium (II) mediated methodologies. In 2018, he joined the Gupton Lab and the Medicines for All Institute at Virginia Commonwealth University. His current research is focused on improving the synthetic route to access active pharmaceutical ingredients (APIs) through process intensification and continuous processing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 19 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/CherylePeck.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#CherylPeck">Cheryl Peck, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Postdoctoral Research Associate</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 19-->
+                            <div class="modal fade" id="CherylPeck" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Cheryl Peck, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Cheryl L. Peck, Ph.D., is a postdoctoral fellow in Dr. Gupton’s laboratory and Medicines for All. She holds a B.S. in chemistry with a minor in biology from Longwood University and a Ph.D. in organic chemistry from Virginia Polytechnic Institute and State University. Her doctoral work with Dr. Webster Santos focused on the development and optimization of novel synthetic methods for the formation of carbon-boron bonds utilizing inexpensive reagents and environmentally friendly reaction conditions. Her current research at VCU is centered around the development of cost effective strategies for the synthesis of the HIV drug Emtricitabine.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- Team Member 4 -->
-            <div class="grid-item">
-                <div class="card border-0 shadow">
-                    <img src="https://placehold.it/500x350" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Team Member</h5>
-                        <div class="card-text text-black-50">Team Member Title</div>
+                    <div class="tab-pane fade" id="scholars-advisers" role="tabpanel" aria-labelledby="scholars-advisers-tab">
+                        <div class="team-grid">
+                            <!-- Team Member 20 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Rayomond%20Dominey.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#RaymondDominey">Raymond N. Dominey, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Visiting Research Associate</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 20-->
+                            <div class="modal fade" id="RaymondDominey" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Raymond N. Dominey, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Raymond N. Dominey, Ph.D., is an Adjunct Associate Professor in the Department of Chemical and Life Science Engineering. He studied chemistry at the University of West Florida (B.S.), MIT (Ph.D. Advisor: Mark S. Wrighton), and UNC-Chapel Hill (Post-Doc Advisor: David Whitten). He is an Associate Professor of Chemistry at the University of Richmond where he works with undergraduate students on research projects focused in two main areas: 1) the interface of physical, analytical, and synthetic Chemistry, particularly as it applies to developing flow chemistry methods for synthesis of important API’s, and 2) energy research, in particular CO2 reduction. His work at Medicines for all focuses on developing Electrosonic Spray Ionization (ESSI) as a flow chemistry method for accelerating organic reactions and using NMR to elucidate synthesis pathways for optimizing flow syntheses of API’s, e.g. fluconazole.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 21 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/anton-toutov.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#AntonToutov">Anton A. Toutov, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Senior Technical Adviser</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 21-->
+                            <div class="modal fade" id="AntonToutov" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Anton A. Toutov, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Anton A. Toutov, Ph.D., is the Co-Founder and Chief Science Officer of Los Angeles-based start-up, Fuzionaire, which spun out of Caltech in 2016. His work involves developing alternatives to precious metal catalysts for known and novel organic reactions, such as employing sodium and potassium salts to catalyze a variety of cross-coupling chemistries. Dr. Toutov holds a B.S. in chemistry from Queen's University and a Ph.D. in organic chemistry from Caltech, working in the laboratory of Prof. Robert H. Grubbs, where he held Dow–Resnick, NSERC, and Bristol–Myers Squibb fellowships.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <!--empty grid item-->
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- Team Member 5 -->
-            <div class="grid-item">
-                <div class="card border-0 shadow">
-                    <img src="https://placehold.it/500x350" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Team Member</h5>
-                        <div class="card-text text-black-50">Team Member Title</div>
+                    <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">
+                        <div class="team-grid">
+                            <!-- Team Member 22 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/vcu-blank-profile.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#JeffreyNoble">Jeffrey Noble</a></h5>
+                                        <div class="card-text text-black-50">Graduate Student</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 22-->
+                            <div class="modal fade" id="JeffreyNoble" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Jeffrey Noble</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Jeffrey Noble is a graduate student in VCU’s Chemistry Department. He attended the University of Richmond where he received a B.S. in biochemistry and molecular biology. Jeffrey currently works with the Roper lab.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 23 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Juliana%20Souzav3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#JulianaSouza">Juliana Souza</a></h5>
+                                        <div class="card-text text-black-50">Graduate Student</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 23-->
+                            <div class="modal fade" id="JulianaSouza" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Juliana Souza</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Juliana Souza received her B.S. in chemistry in 2013 from Universidade Federal de São Carlos (UFSCar), Brazil, and has master's degree in organic chemistry, specifically on porphyrin synthesis by the same university (2014-2015). Currently, she is a graduate student at UFSCar and Virginia Commonwealth University and works with photochemical reactions in continuous flow conditions.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <!--empty grid item-->
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- Team Member 6 -->
-            <div class="grid-item">
-                <div class="card border-0 shadow">
-                    <img src="https://placehold.it/500x350" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Team Member</h5>
-                        <div class="card-text text-black-50">Team Member Title</div>
+                    <div class="tab-pane fade" id="admin" role="tabpanel" aria-labelledby="admin-tab">
+                        <div class="team-grid">
+                            <!-- Team Member 23 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/margaretEdwards.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#MargaretEdwards">Margaret Edwards</a></h5>
+                                        <div class="card-text text-black-50">Program Coordinator</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 23-->
+                            <div class="modal fade" id="MargaretEdwards" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Margaret Edwards</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Margaret Edwards serves as the Program Coordinator for the Medicines for All Institute.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 24 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Rudy.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#RudyKrack">Rudy Krack</a></h5>
+                                        <div class="card-text text-black-50">Instructor</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 24-->
+                            <div class="modal fade" id="RudyKrack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Rudy Krack</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Rudy Krack is a chemical engineer with 30+ years experience in the chemical and pharmaceutical industry. He provides raw material cost estimates for new processes for the Gupton research group. Now in the ninth year of an "encore career" in academia, Krack also teaches undergraduate lab courses, manages instructional laboratories, maintains equipment and instrumentation, promotes lab safety and assists with capstone design projects.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 25 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Amy.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#AmyMiner">Amy Miner</a></h5>
+                                        <div class="card-text text-black-50">Laboratory Manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 25-->
+                            <div class="modal fade" id="AmyMiner" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Amy Miner</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Amy Miner graduated from Taylor University with a B.A. in biology. She previously worked at VCU's School of Medicine in a smooth muscle physiology and biochemistry lab before joining Medicines for All in 2017. She brings over fifteen years of bench and lab management experience.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 25 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/C%20Spivey(b).jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#ChukySpivey">Chuky Spivey</a></h5>
+                                        <div class="card-text text-black-50">Office Manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 25-->
+                            <div class="modal fade" id="ChukySpivey" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Chuky Spivey</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Chuky Spivey serves as the Office Manager for the Medicines for All Institute and Department of Chemical and Life Science Engineering at Biotech Eight.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Team Member 26 -->
+                            <div class="grid-item">
+                                <div class="card border-0 shadow">
+                                    <img src="https://medicines4all.vcu.edu/media/medicines4all/assets/images/profile-images/Perrer.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-2"><a href="#" data-toggle="modal" data-target="#PerrerTosso">Perrer Tosso, Ph.D.</a></h5>
+                                        <div class="card-text text-black-50">Project Manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 26 -->
+                            <div class="modal fade" id="PerrerTosso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <p class="modal-title" id="exampleModalLabel">Perrer Tosso, Ph.D.</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Perrer Tosso, Ph.D., is a chemist with extensive experience in drug discovery and development. He holds a Ph.D. in medicinal chemistry from the Georgetown University School of Medicine. His research interests include active pharmaceutical ingredient synthesis and flow methodologies. Perrer currently works as a project manager for the Medicines for All Institute.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </section>
     <footer>
         <h1 class="mb-5">How to reach us</h1>
