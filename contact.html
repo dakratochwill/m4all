@@ -9,9 +9,78 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom Stylesheets-->
+    <link rel="stylesheet" href="css/form.css" type="text/css">
     <link rel="stylesheet/less" href="css/style.less" type="text/css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Jotform files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+    <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.12620" type="text/javascript"></script>
+    <script type="text/javascript">
+        JotForm.init(function() {
+            JotForm.alterTexts(undefined);
+            JotForm.clearFieldOnHide = "disable";
+            JotForm.submitError = "jumpToFirstError";
+            /*INIT-END*/
+        });
+
+        JotForm.prepareCalculationsOnTheFly([null, null, {
+            "name": "submit2",
+            "qid": "2",
+            "text": "Submit",
+            "type": "control_button"
+        }, {
+            "description": "",
+            "name": "name",
+            "qid": "3",
+            "text": "Name",
+            "type": "control_fullname"
+        }, {
+            "description": "",
+            "name": "email",
+            "qid": "4",
+            "subLabel": "example@example.com",
+            "text": "Email",
+            "type": "control_email"
+        }, {
+            "description": "",
+            "name": "message",
+            "qid": "5",
+            "subLabel": "",
+            "text": "Message",
+            "type": "control_textarea"
+        }]);
+        setTimeout(function() {
+            JotForm.paymentExtrasOnTheFly([null, null, {
+                "name": "submit2",
+                "qid": "2",
+                "text": "Submit",
+                "type": "control_button"
+            }, {
+                "description": "",
+                "name": "name",
+                "qid": "3",
+                "text": "Name",
+                "type": "control_fullname"
+            }, {
+                "description": "",
+                "name": "email",
+                "qid": "4",
+                "subLabel": "example@example.com",
+                "text": "Email",
+                "type": "control_email"
+            }, {
+                "description": "",
+                "name": "message",
+                "qid": "5",
+                "subLabel": "",
+                "text": "Message",
+                "type": "control_textarea"
+            }]);
+        }, 20);
+
+    </script>
     <title>Medicines for All</title>
 </head>
 
@@ -24,19 +93,19 @@
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ml-auto mr-5">
-                    <li class="nav-item nav-link"><a href="#">about m4all</a>
+                    <li class="nav-item nav-link"><a href="#">about M4ALL</a>
                         <ul>
                             <li class="nav-item nav-link"><a href="about.html">mission</a></li>
                             <li class="nav-item nav-link"><a href="team.html">team</a></li>
-                            <li class="nav-item nav-link"><a href="affiliates.html">m4all affiliates</a></li>
+                            <li class="nav-item nav-link"><a href="affiliates.html">M4ALL affiliates</a></li>
                             <li class="nav-item nav-link"><a href="contact.html">Contact</a></li>
                         </ul>
                     </li>
                     <li class="nav-item nav-link"><a href="#">Our Portfolio</a>
                         <ul>
                             <li class="nav-item nav-link"><a href="overview.html">overview</a></li>
-                            <li class="nav-item nav-link"><a href="#">bmgf projects</a></li>
-                            <li class="nav-item nav-link"><a href="#">other projects</a></li>
+                            <li class="nav-item nav-link"><a href="BMGFprojects.html">BMGF projects</a></li>
+                            <li class="nav-item nav-link"><a href="otherProjects.html">other projects</a></li>
                         </ul>
                     </li>
                     <li class="nav-item nav-link"><a href="#">Resources</a>
@@ -46,14 +115,14 @@
                     </li>
                     <li class="nav-item nav-link"><a href="#">Get Involved</a>
                         <ul>
-                            <li class="nav-item nav-link"><a href="#">Donors</a></li>
-                            <li class="nav-item nav-link"><a href="#">educational resources</a></li>
+                            <li class="nav-item nav-link"><a href="donors.html">Donors</a></li>
+                            <li class="nav-item nav-link"><a href="education.html">educational resources</a></li>
                         </ul>
                     </li>
                     <li class="nav-item nav-link"><a href="news.html">News</a>
                         <ul>
-                            <li class="nav-item nav-link"><a href="#">Press releases</a></li>
-                            <li class="nav-item nav-link"><a href="#">publication archives</a></li>
+                            <li class="nav-item nav-link"><a href="press-releases.html">Press releases</a></li>
+                            <li class="nav-item nav-link"><a href="publications.html">publication archives</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -61,33 +130,80 @@
         </div>
     </nav>
     <header class="subhead">
-        <div class="container"><h1>Contact Us</h1></div>
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
     </header>
     <section class="subpage container">
-        <h2>Location and Directions</h2>
-        <p>Medicines for All is located in the Biotech 8 Research Facility within the Virginia BIotechnology Research Park.</p>
-        <p>737 North 5th Street<br /> Richmond, Virginia 23219</p>
-        <p class="small">Please note that the entrance to the building is on Jackson Street between 5th Street&nbsp;and Navy Hill Drive. Parking is available in the deck directly behind the building. If you are a VCU parking permit holder, you can feel free to park in any of the spots on the right-hand side of the second floor of the deck marked &ldquo;VCU College of Engineering.&rdquo; If you are not a VCU parking permit holder, please contact us (<a title="email us" href="mailto:m4all@vcu.edu">m4all@vcu.edu</a>) to organize a guest parking pass.</p>
-        <button class="btn btn-solid" type="button" data-toggle="collapse" data-target="#east">East by Interstate 64 West</button>
-        <div id="east" class="collapse">
-            <p class="section-paragraph">Take Exit #190 for Fifth Street and Downtown/Coliseum. Merge onto 5th Street. Take first left onto E. Jackson Street. Turn left onto N. 8th Street. The 8th Street Parking Deck is on the right. To walk to the IEM, exit parking deck and turn right on Jackson Street. Walk three blocks and turn right on 5th Street. The Biotech Eight Facility is at N. 5th Street and Jackson Street.</p>
+        <div class="row">
+            <div class="col-md-7">
+                <h2>Medicines for All Institute</h2>
+                <p>Phone: (555) 555-5555</p>
+                <p>Address:<br>BioTech Eight<br>737 North 5th Street<br /> Richmond, Virginia 23219-0100<br>USA</p>
+            </div>
+            <div class="col-md-5">
+                <div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.329227659779!2d-77.4351241846489!3d37.54730643298679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b1112575fd7f65%3A0x2a7c0594e2e8e176!2sBiotech%20Eight%2C%20737%20N%205th%20St%2C%20Richmond%2C%20VA%2023219!5e0!3m2!1sen!2sus!4v1567621827081!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+            </div>
         </div>
-        <button class="btn btn-solid" type="button" data-toggle="collapse" data-target="#west">West by Interstate 64 East</button>
-        <div id="west" class="collapse">
-            <p class="section-paragraph">Take the 3rd Street exit toward Coliseum/Downtown.Turn left on E. Jackson Street. Turn left on N. 8th Street. The 8th Street Parking Deck is on the right. To walk to the IEM, exit parking deck and turn right on Jackson Street. Walk three blocks and turn right on 5th Street. The Biotech Eight Facility is at N. 5th Street and Jackson Street.</p>
-        </div>
-        <button class="btn btn-solid" type="button" data-toggle="collapse" data-target="#north">North by Interstate 95 South</button>
-        <div id="north" class="collapse">
-            <p class="section-paragraph">From I-95 South, use the right lane to keep right at the fork, continue on I-64 and follow signs for Williamsburg/Norfolk. From I-64, take the 3rd Street exit toward Coliseum/Downtown. Turn left on E. Jackson Street. Turn left on N. 8th Street. The 8th Street Parking Deck is on the right. To walk to the IEM, exit parking deck and turn right on Jackson Street. Walk three blocks and turn right on 5th Street. The Biotech Eight Facility is at N. 5th Street and Jackson Street.</p>
-        </div>
-        <button class="btn btn-solid" type="button" data-toggle="collapse" data-target="#south">South by Interstate 95 North</button>
-        <div id="south" class="collapse">
-            <p class="section-paragraph">From I-95 South, take exit 74C and merge onto E. Broad Street. Take first right onto College Street. Take first left onto E. Marshall Street. Take first right onto N. 13th Street. N. 13th Street becomes E. Duval Street. Continue on Duval Street to roundabout. Exit roundabout on N. 8th Street. The 8th Street Parking Deck is on the left. To walk to the IEM, exit parking deck and turn right on Jackson Street. Walk three blocks and turn right on 5th Street. The Biotech Eight Facility is at N. 5th Street and Jackson Street.</p>
-        </div>
-        <button class="btn btn-solid" type="button" data-toggle="collapse" data-target="#vcu">The VCU Campus Connector</button>
-        <div id="vcu" class="collapse">
-            <p class="section-paragraph">VCU students, faculty and staff members can use the VCU Campus Connector busses to access the Institute for Engineering and Medicine&rsquo;s Biotech Eight facility. Take the Connector to 3rd Street and E. Marshall Street. Walk 2 blocks north on 3rd Street. Turn right on Jackson Street and walk a block and a half. The Biotech Eight facility is at the intersection of Jackson Street and 5th Street.</p>
-        </div>
+        <form class="jotform-form" action="https://submit.jotform.us/submit/92465962872168/" method="post" name="form_92465962872168" id="92465962872168" accept-charset="utf-8">
+            <input type="hidden" name="formID" value="92465962872168" />
+            <div role="main" class="form-all">
+                <ul class="form-section page-section">
+                    <li class="form-line" data-type="control_fullname" id="id_3">
+                        <label class="form-label form-label-top form-label-auto" id="label_3" for="first_3"> Name </label>
+                        <div id="cid_3" class="form-input-wide">
+                            <div data-wrapper-react="true">
+                                <span class="form-sub-label-container" style="vertical-align:top">
+                                    <input type="text" id="first_3" name="q3_name[first]" class="form-textbox" size="10" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" />
+                                    <label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px"> First Name </label>
+                                </span>
+                                <span class="form-sub-label-container" style="vertical-align:top">
+                                    <input type="text" id="last_3" name="q3_name[last]" class="form-textbox" size="15" value="" data-component="last" aria-labelledby="label_3 sublabel_3_last" />
+                                    <label class="form-sub-label" for="last_3" id="sublabel_3_last" style="min-height:13px"> Last Name </label>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="form-line" data-type="control_email" id="id_4">
+                        <label class="form-label form-label-top form-label-auto" id="label_4" for="input_4"> Email </label>
+                        <div id="cid_4" class="form-input-wide">
+                            <span class="form-sub-label-container" style="vertical-align:top">
+                                <input type="email" id="input_4" name="q4_email" class="form-textbox validate[Email]" size="30" value="" data-component="email" aria-labelledby="label_4 sublabel_input_4" />
+                                <label class="form-sub-label" for="input_4" id="sublabel_input_4" style="min-height:13px"> example@example.com </label>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="form-line" data-type="control_textarea" id="id_5">
+                        <label class="form-label form-label-top form-label-auto" id="label_5" for="input_5"> Message </label>
+                        <div id="cid_5" class="form-input-wide">
+                            <textarea id="input_5" class="form-textarea" name="q5_message" cols="40" rows="6" data-component="textarea" aria-labelledby="label_5"></textarea>
+                        </div>
+                    </li>
+                    <li class="form-line" data-type="control_button" id="id_2">
+                        <div id="cid_2" class="form-input-wide">
+                            <div style="text-align:left" class="form-buttons-wrapper ">
+                                <button id="input_2" type="submit" class="form-submit-button" data-component="button">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="display:none">
+                        Should be Empty:
+                        <input type="text" name="website" value="" />
+                    </li>
+                </ul>
+            </div>
+            <script>
+                JotForm.showJotFormPowered = "0";
+
+            </script>
+            <input type="hidden" id="simple_spc" name="simple_spc" value="92465962872168" />
+            <script type="text/javascript">
+                document.getElementById("si" + "mple" + "_spc").value = "92465962872168-92465962872168";
+
+            </script>
+        </form>
     </section>
     <footer>
         <div class="row">
@@ -96,7 +212,7 @@
                 <p>737 N. 5th Street
                     <br>Box 980100
                     <br>Richmond, Virginia 23298-0100</p>
-                <p class="btn-white"><a href="#">Contact us</a></p>
+                <p class="btn-white"><a href="contact.html">Contact us</a></p>
 
             </div>
             <div class="col-md-4">
