@@ -1,0 +1,55 @@
+form {
+    padding: 0px;
+}
+form ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+input,
+textarea {
+    padding: 5px 15px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    min-width: 300px;
+    margin: 0px;
+    max-width: 100%;
+}
+
+.form-label {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.form-required {
+    color: darkred;
+    font-size: 20px;
+}
+
+.form-line {
+    margin-bottom: 30px;
+}
+
+.form-sub-label {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 15px 10px;
+    display: block;
+}
+
+.form-submit-button {
+    background: #278ebc;
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0px;
+}
+
+.form-submit-button:hover {
+    background: #000;
+    color: #fff;
+}
