@@ -202,7 +202,7 @@ cite {
 
     .grid {
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 4fr;
         grid-gap: 50px;
     }
 
@@ -210,14 +210,19 @@ cite {
         font-size: 14px;
         margin: 0px 5px;
     }
-
+    .nav-pills li {
+        display: block;
+        width: 100%;
+    }
     .nav-pills li a {
         &.active {
             background: @darkblue;
+            color: #fff;
         }
 
         &:hover {
             background: @lightblue;
+            color: #333;
         }
     }
 
@@ -332,7 +337,7 @@ cite {
 .drug {
     background: @lightblue;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px 10px 5px;
     margin-bottom: 10px;
     
     h3 {
@@ -343,6 +348,8 @@ cite {
         background: #fff;
         padding: 10px;
         border-radius: 5px;
+        font-size: 16px;
+        margin-bottom: 5px;
     }
     a {
         color: #333;
@@ -364,6 +371,24 @@ cite {
         font-size: 18px;
         margin: 10px 0px;
     }
+}
+
+.pub-date {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.pub-title {
+    color: @darkblue;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+.pub-author {
+    font-size: 18px;
 }
 
 footer {
