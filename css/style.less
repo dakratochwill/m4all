@@ -55,30 +55,51 @@ hr {
 cite {
     text-transform: uppercase;
     font-size: 14px;
-    padding-left: 10px;
     font-style: normal;
     letter-spacing: 2px;
+    display: block;
 }
 
 
 .masthead {
     position: relative;
-    min-height: 80vh;
-    background-image: linear-gradient(to top, #fff1eb 0%, @lightblue 100%);
+    min-height: 50vh;
+    background-image: url('../img/M4ALL_Main_Graphic-01.png');
+    background-attachment: scroll;
+    background-position: center;
+    margin: 30px auto 50px;
 
     img {
-        max-width: 500px;
-        margin-bottom: 20px;
+        max-width: 100%;
     }
 
-    .content {
+    .content p {
+        font-family: 'Heebo', sans-serif;
         position: absolute;
-        top: 12vw;
-        width: 100%;
-        text-align: center;
+        bottom: 15px;
+        color: #fff;
+        font-size: 35px;
+        background: rgba(255, 255, 255, 0.3);
+        padding: 30px 100px 30px 30px;
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        margin-bottom: 0px;
+        line-height: 1.2;
+    }
+
+    .content small {
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    .content i {
+        font-size: 18px;
+        padding-right: 10px;
+    }
+
+    a {
+        color: #fff;
     }
 }
-
 
 //navigation styles
 .navbar {
@@ -155,6 +176,24 @@ cite {
         img {
             max-width: 100%;
         }
+
+        .grid-item {
+            background: #f2f2f2;
+
+            .content {
+                padding: 15px;
+            }
+
+            i {
+                font-size: 18px;
+                padding-right: 10px;
+            }
+
+            a {
+                color: #333;
+            }
+
+        }
     }
 }
 
@@ -172,7 +211,8 @@ cite {
 }
 
 
-.affiliates, .projects {
+.affiliates,
+.projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
@@ -210,10 +250,12 @@ cite {
         font-size: 14px;
         margin: 0px 5px;
     }
+
     .nav-pills li {
         display: block;
         width: 100%;
     }
+
     .nav-pills li a {
         &.active {
             background: @darkblue;
@@ -285,8 +327,9 @@ cite {
 
 .main-content {
     ul li {
-    margin-bottom: 10px;
-}
+        margin-bottom: 10px;
+    }
+
     .btn-solid a {
         display: inline-block;
         padding: 10px 25px;
@@ -295,16 +338,19 @@ cite {
         text-decoration: none;
         border-radius: 5px;
         font-size: 20px;
+
         &::after {
-            font-family: "Font Awesome 5 Free"; 
-            font-weight: 900; 
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
             content: "\f30b";
             padding-left: 10px;
             font-size: 24px;
         }
-    }   
+    }
 }
-.team-grid, .news-grid {
+
+.team-grid,
+.news-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
@@ -339,11 +385,12 @@ cite {
     border-radius: 5px;
     padding: 15px 10px 5px;
     margin-bottom: 10px;
-    
+
     h3 {
         font-size: 20px;
         color: @darkblue;
     }
+
     p {
         background: #fff;
         padding: 10px;
@@ -351,6 +398,7 @@ cite {
         font-size: 16px;
         margin-bottom: 5px;
     }
+
     a {
         color: #333;
     }
@@ -387,6 +435,7 @@ cite {
     margin-bottom: 5px;
     line-height: 1.4;
 }
+
 .pub-author {
     font-size: 18px;
 }
