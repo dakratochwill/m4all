@@ -28,6 +28,10 @@ h3 {
     color: #333;
 }
 
+strong {
+    font-family: 'Heebo', sans-serif;
+}
+
 .container {
     max-width: 1300px;
 }
@@ -36,7 +40,8 @@ img {
     max-width: 100%;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: @darkblue;
 }
 
@@ -246,20 +251,17 @@ cite {
         grid-gap: 50px;
     }
 
-    a[role=tab] {
-        font-size: 14px;
-        margin: 0px 5px;
-    }
-
     .nav-pills li {
         display: block;
         width: 100%;
+        font-size: 14px;
     }
 
     .nav-pills li a {
-        &.active {
+        &:active {
             background: @darkblue;
             color: #fff;
+            margin: 0px 5px;
         }
 
         &:hover {
@@ -358,6 +360,32 @@ cite {
 
 .news-grid p {
     margin: 5px;
+}
+
+.tech-model {
+    margin: 30px 0px;
+    border-top: 5px solid @lightblue;
+    border-bottom: 5px solid @lightblue;
+    padding: 30px 0px;
+    font-family: 'Heebo', sans-serif;
+    color: #555;
+
+    .logo {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .icon {
+        display: inline-block;
+        font-size: 40px;
+        color: @darkblue;
+        margin: 10px 20px;
+        vertical-align: middle;
+    }
+    a[data-toggle="modal"]:hover {
+        cursor: pointer;
+    }
 }
 
 .modal-body,
@@ -527,5 +555,13 @@ footer {
         z-index: 2;
         min-width: 0;
         padding-top: 25px;
+    }
+
+    .tech-model {
+        text-align: center;
+
+        .icon {
+            display: block;
+        }
     }
 }
