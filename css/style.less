@@ -328,6 +328,9 @@ cite {
 }
 
 .main-content {
+    max-width: 1000px;
+    margin: 0px auto;
+    
     ul li {
         margin-bottom: 10px;
     }
@@ -383,6 +386,7 @@ cite {
         margin: 10px 20px;
         vertical-align: middle;
     }
+
     a[data-toggle="modal"]:hover {
         cursor: pointer;
     }
@@ -402,6 +406,14 @@ cite {
 
 .card-text {
     font-size: 14px;
+}
+
+.card-img-top {
+    min-height: 300px;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .close {
@@ -473,6 +485,15 @@ footer {
     color: #fff;
     padding: 1.5em 3em;
 
+    .logo {
+        text-align: right;
+
+        img {
+            max-width: 500px;
+            text-align: right;
+        }
+    }
+
     h2 {
         font-size: 25px;
         color: #fff;
@@ -504,6 +525,14 @@ footer {
 }
 
 @media screen and (max-width: 997px) {
+
+    .navbar-brand {
+        padding: 10px;
+    }
+
+    .navbar-nav li a {
+        display: block;
+    }
 
     .overview,
     .our-services,
