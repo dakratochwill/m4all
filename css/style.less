@@ -65,38 +65,31 @@ cite {
     display: block;
 }
 
+.slider-controls {
+    z-index: 2;
+}
 
-.masthead {
-    position: relative;
-    min-height: 50vh;
-    background-image: url('../img/M4ALL_Main_Graphic-01.png');
-    background-attachment: scroll;
-    background-position: center;
-    margin: 30px auto 50px;
-
-    img {
-        max-width: 100%;
-    }
-
-    .content p {
+.content-slider {
+    p {
         font-family: 'Heebo', sans-serif;
         position: absolute;
         bottom: 15px;
         color: #fff;
         font-size: 35px;
-        background: rgba(255, 255, 255, 0.3);
+        background: rgba(0, 0, 0, 0.3);
         padding: 30px 100px 30px 30px;
         clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
         margin-bottom: 0px;
         line-height: 1.2;
+        z-index: 3;
     }
 
-    .content small {
+    small {
         font-size: 20px;
         display: inline-block;
     }
 
-    .content i {
+    i {
         font-size: 18px;
         padding-right: 10px;
     }
@@ -147,6 +140,7 @@ cite {
     min-width: 200px;
     display: none;
     font-size: 16px;
+    list-style: none;
 
     li {
         margin: 0px;
@@ -557,26 +551,34 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .masthead {
-        min-height: 300px;
-        position: relative;
-
-        img {
-            max-width: 100%;
-        }
-
-        .content p {
-            max-width: 100%;
-            bottom: 0;
-            left: 0px;
-            padding: 15px;
-            clip-path: none;
+    .content-slider {
+        p {
+            position: relative;
+            bottom: 0px;
+            color: #fff;
             font-size: 25px;
+            background: @darkblue;
+            padding: 30px 100px 30px 30px;
+            clip-path: none;
         }
 
-        .content small {
-            font-size: 20px;
+        small {
+            font-size: 15px;
+            display: inline-block;
         }
+
+        i {
+            font-size: 15px;
+            padding-right: 10px;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+        max-height: 60%;
     }
 
     .navbar-nav li ul {
